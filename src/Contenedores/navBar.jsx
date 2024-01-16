@@ -1,13 +1,17 @@
 import React from 'react';
 
-export function NavBar({ nom }) {
+export function NavBar({ nom, url }) {
   return (
-    <header>
-      <a href="">{nom}</a>
-    </header>
+    <>
+      <a href={url}>{nom}</a>
+    </>
   );
 }
 
-export function NavIcons({ url, alt }) {
-  return <img src={url} alt={alt} />;
+export function NavIcons({ url, alt, url2}) {
+  return (
+  <>
+  <a href={url2}><img src={url} alt={alt} /></a>
+  </>
+  );
 }
