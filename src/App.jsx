@@ -4,6 +4,7 @@ import "./App.css";
 import InfoNavbar from "./Contenedores/infoNavbar";
 import { NavIcons } from "./Contenedores/navBar";
 import Infoicon from "./Contenedores/infoicon";
+import fotoR from './assets/ElVijoRotsen.jpeg'
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             Rotsen Estefanel <br />I build things for web
           </h1>
           <img
-            src="../src/assets/WhatsApp Image 2024-01-16 at 14.19.24.jpeg"
+            src={fotoR}
             alt=""
             className="foto"
           />
