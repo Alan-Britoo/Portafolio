@@ -1,41 +1,43 @@
-import { useState } from "react";
-
-import "./App.css";
+import React from "react";
 import InfoNavbar from "./Contenedores/infoNavbar";
 import { NavIcons } from "./Contenedores/navBar";
 import Infoicon from "./Contenedores/infoicon";
-import fotoR from './assets/ElVijoRotsen.jpeg'
+import fotoR from "./assets/ElVijoRotsen.jpeg";
 
 function App() {
   return (
     <>
-      <div>
-        <div>
-          <InfoNavbar />
-        </div>
-        <div className="info">
-          <h1 style={{fontSize:'45px'}}>
+      <div className=" bg-[#191919]">
+        <InfoNavbar />
+        <div className="h-full w-[80%] flex justify-between items-center mt-[10%] text-white mx-auto">
+          <h1 className="text-5xl text-start">
             Hi 👋,
             <br />
             My name is <br />
-            Rotsen Estefanel <br />I build things for web
+            <p className="text-transparent bg-clip-text bg-gradient-to-r to-pink-600 from-blue-500 p-0 m-0">
+              Rotsen Estefanel
+            </p>{" "}
+            I build things for web
           </h1>
-          <img
-            src={fotoR}
-            alt=""
-            className="foto"
-          />
+          <div className="rounded-full h-96 w-96 p-1 bg-gradient-to-r from-pink-500 to-blue-600">
+            <img
+              src={fotoR}
+              alt=""
+              className="rounded-full h-full w-full object-cover border-4 border-transparent"
+            />
+          </div>
         </div>
-        <h2 style={{ marginLeft: "55%", marginTop: "90px", fontSize: "30px" }}>
-        My Tech Stack
-      </h2>
-      <p style={{ marginLeft: "49%", marginTop: "10px", fontSize: "17px" }}>
-        {" "}
-        Technologies I’ve been working with recently
-      </p>
-      <div>
-        <Infoicon/>
-      </div>
+        <h2 className="w-[30%] mx-auto mt-[10%] text-5xl text-center font-semibold leading-tight  text-[#CCCCCC] ">
+          My Tech Stack
+        </h2>
+
+        <p class="w-full text-[#A7A7A7] mt-4 text-2xl text-center mx-auto font-normal leading-7 ">
+          Technologies I’ve been working with recently
+        </p>
+
+        <div className="h-[20%] py-[5%]">
+          <Infoicon />
+        </div>
       </div>
     </>
   );
