@@ -3,6 +3,7 @@ import InfoNavbar from "./Contenedores/infoNavbar";
 import { NavIcons } from "./Contenedores/navBar";
 import Infoicon from "./Contenedores/infoicon";
 import fotoR from "./assets/ElVijoRotsen.jpeg";
+import Footer from "./Contenedores/Foot";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
             <img
               src={fotoR}
               alt=""
-              className="rounded-full h-full w-full object-cover border-4 border-transparent"
+              className="rounded-full h-full w-full object-cover border-4 border-transparent transform hover:scale-105 transition duration-300 ease-in-out"
             />
           </div>
         </div>
@@ -38,6 +39,8 @@ function App() {
         <div className="h-[20%] py-[5%]">
           <Infoicon />
         </div>
+
+        <Footer />
       </div>
     </>
   );

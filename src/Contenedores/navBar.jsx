@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export function NavBar({ nom, url }) {
   return (
@@ -8,10 +8,15 @@ export function NavBar({ nom, url }) {
   );
 }
 
-export function NavIcons({ url, alt, url2}) {
+export function NavIcons({ url, alt, url2 }) {
   return (
-  <>
-  <a href={url2}><img src={url} alt={alt} /></a>
-  </>
+    <>
+      <a
+        className="transform hover:scale-110 transition duration-300 ease-in-out w-[110px] h-[110px] flex justify-center items-center"
+        href={url2}
+      >
+        <img className="h-full w-full" src={url} alt={alt} />
+      </a>
+    </>
   );
 }
