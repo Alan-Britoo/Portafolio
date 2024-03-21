@@ -7,20 +7,20 @@ export default function Footer() {
       <div className="w-[85%] mx-auto flex pb-[2%] justify-center items-center">
         <img className="ico" src={icono} alt="" />
         <div className=" transform hover:scale-100 transition duration-300 ease-in-out mx-auto justify-center items-center cursor-pointer">
-          <div className=" flex gap-12 text-[#A7A7A7]  transform hover:scale-110 transition duration-300 ease-in-out ">
-            <a className="hover:text-gray-800  transform hover:scale-110 transition duration-300 ease-in-out">
+          <div className=" flex gap-[40px] text-[#A7A7A7]  transform hover:scale-110 transition duration-300 ease-in-out ">
+            <a className="bg-gradient-to-r  hover:from-pink-600 hover:to-blue-500 hover:scale-105 transition duration-200  ease-in-out px-3 py-[1px] rounded-md">
               Home
             </a>
-            <a className="hover:text-gray-800  transform hover:scale-110 transition duration-300 ease-in-out">
+            <a className="bg-gradient-to-r  hover:from-pink-600 hover:to-blue-500 hover:scale-105 transition duration-200  ease-in-out px-3 py-[1px] rounded-md">
               About
             </a>
-            <a className="hover:text-gray-800  transform hover:scale-110 transition duration-300 ease-in-out">
+            <a className="bg-gradient-to-r  hover:from-pink-600 hover:to-blue-500 hover:scale-105 transition duration-200  ease-in-out px-3 py-[1px] rounded-md">
               Tech Stack
             </a>
-            <a className="hover:text-gray-800  transform hover:scale-110 transition duration-300 ease-in-out">
+            <a className="bg-gradient-to-r  hover:from-pink-600 hover:to-blue-500 hover:scale-105 transition duration-200  ease-in-out px-3 py-[1px] rounded-md">
               Projects
             </a>
-            <a className="hover:text-gray-800  transform hover:scale-110 transition duration-300 ease-in-out">
+            <a className="bg-gradient-to-r  hover:from-pink-600 hover:to-blue-500 hover:scale-105 transition duration-200  ease-in-out px-3 py-[1px] rounded-md">
               Contact
             </a>
           </div>

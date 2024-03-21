@@ -4,6 +4,10 @@ import { NavIcons } from "./Contenedores/navBar";
 import Infoicon from "./Contenedores/infoicon";
 import fotoR from "./assets/ElVijoRotsen.jpeg";
 import Footer from "./Contenedores/Foot";
+import CardProject from "./Contenedores/CardProject";
+import EcZ from "./assets/ecomerceZapatos.png";
+import ABB from "./assets/AirBnB.png";
+import Temp from "./assets/Clima.png";
 
 function App() {
   return (
@@ -39,8 +43,47 @@ function App() {
         <div className="h-[20%] py-[5%]">
           <Infoicon />
         </div>
-
-        <Footer />
+        <div className="text-[#CCCCCC] my-[5%] text-center text-[48px] font-semibold">
+          Projects
+          <p className="text-[#A7A7A7] mt-[2%] text-center text-[32px] font-medium">
+            Things I’ve built so far
+          </p>
+        </div>
+        <div className="flex w-[80%] gap-[5%] mx-auto  ">
+          <CardProject
+            foto={EcZ}
+            titulo={"E-Commerce"}
+            desc={
+              "He replicado una plataforma de comercio electrónico intuitiva y minimalista para comprar y vender productos. Experimenta la conveniencia del shopping online con nosotros hoy mismo."
+            }
+            tec={"HTML , JavaScript, React, Tailwind"}
+            url={"https://airbnbr.netlify.app"}
+            url2={"https://github.com/Alan-Britoo/eCOMERS-ZAPATOS"}
+          />
+          <CardProject
+            foto={ABB}
+            titulo={"AirBnb"}
+            desc={
+              "He recreado la esencia y funcionalidad de Airbnb, ofreciendo una experiencia única. Diseñé y desarrollé esta app para descubrir, reservar y compartir alojamientos en todo el mundo de forma intuitiva."
+            }
+            tec={"HTML , JavaScript, React, Tailwind"}
+            url={"https://ecomercezapatos.netlify.app"}
+            url2={"https://github.com/Alan-Britoo/MPR-N3"}
+          />
+          <CardProject
+            foto={Temp}
+            titulo={"App-Temperature"}
+            desc={
+              "Mi proyecto es una aplicación de clima intuitiva y precisa. Proporciona información detallada del clima para ayudarte a planificar tus actividades diarias con confianza y comodidad."
+            }
+            tec={"HTML , JavaScript, React, Tailwind"}
+            url={"https://temprfce.netlify.app"}
+            url2={"https://github.com/Alan-Britoo/MPR-N3"}
+          />
+        </div>
+        <div className="mt-[5%]">
+          <Footer />
+        </div>
       </div>
     </>
   );
