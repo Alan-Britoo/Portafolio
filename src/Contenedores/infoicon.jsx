@@ -11,8 +11,12 @@ import php from "../assets/php.png";
 export default function Infoicon() {
   return (
     <>
-      <div className="flex flex-wrap justify-center w-[90%] mx-auto h-[30%] transform  hover:scale-[1.03] transition duration-200 ease-in-out">
-        <div className="flex flex-column justify-center gap-[6%] w-[100%] mx-auto hover:bg-[#1d1c1c] rounded-3xl ">
+      <div className="flex flex-wrap justify-center w-[60%] mx-auto h-[30%] transform  hover:scale-[1.03] transition duration-200 ease-in-out animate-pulse ">
+        <div
+          className="flex flex-column justify-center gap-[6%] w-[100%] mx-auto hover:bg-[#1d1c1c] rounded-3xl "
+          data-aos="zoom-in"
+          data-aos-duration="3000"
+        >
           <NavIcons
             url={`data:image/svg+xml,${encodeURIComponent(
               '<svg xmlns="http://www.w3.org/2000/svg" width="110" height="120" viewBox="0 0 120 120" fill="none"><path d="M22.1325 102.004L13.7063 7.5H106.294L97.8563 101.989L59.9438 112.5L22.1325 102.004Z" fill="#E44F26"/><path d="M60 104.467L90.6375 95.9737L97.845 15.2287H60V104.467Z" fill="#F1662A"/><path d="M60 50.2763H44.6625L43.605 38.4075H60V26.8163H30.9375L31.215 29.9288L34.0613 61.8675H60V50.2763ZM60 80.3775L59.9475 80.3925L47.04 76.9088L46.215 67.665H34.5787L36.2025 85.86L59.9475 92.4525L60 92.4375V80.3775Z" fill="#EBEBEB"/><path d="M59.9587 50.2763V61.8675H74.2312L72.8887 76.9013L59.9587 80.3888V92.4488L83.7225 85.86L83.895 83.9025L86.6175 53.3888L86.9025 50.2763H59.9587ZM59.9587 26.8163V38.4075H87.9562L88.1887 35.805L88.7175 29.9288L88.995 26.8163H59.9587Z" fill="white"/></svg>'
@@ -36,15 +40,19 @@ export default function Infoicon() {
             url2={""}
           />
 
-          <div className="h-[120px] w-[110px]  transform  hover:scale-110 transition duration-300 ease-in-out ">
+          <div className="h-[120px] w-[110px]  transform  hover:scale-110 transition duration-200 ease-in-out  ">
             <NavIcons url={php} alt={"PHP"} url2={""} />
           </div>
 
-          <div className=" h-[110px] w-[120px] flex justify-center items-center">
+          <div className=" h-[110px] w-[120px] flex justify-center items-center   ">
             <NavIcons url={icoo} alt={"REACT"} url2={""} />
           </div>
         </div>
-        <div className="flex flex-column justify-center w-[100%] gap-[6%] mt-[3%] h-full hover:bg-[#1d1c1c] rounded-3xl">
+        <div
+          className="flex flex-column justify-center w-[100%] gap-[6%] mt-[3%] h-full hover:bg-[#1d1c1c] rounded-3xl "
+          data-aos="zoom-out"
+          data-aos-duration="3000"
+        >
           <div className="h-[110px] w-[100px] flex justify-center items-center transform hover:scale-110 transition duration-300 ease-in-out ">
             <NavIcons url={lara} alt={"LARAVEL"} url2={""} />
           </div>

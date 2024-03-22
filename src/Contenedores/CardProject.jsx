@@ -21,26 +21,26 @@ export default function CardProject({ foto, titulo, desc, tec, url, url2 }) {
             className="fixed top-0 left-0 right-0 bottom-0 z-50 bg-black bg-opacity-75 flex justify-center items-center transition-opacity duration-300"
             onClick={closeModal}
           >
-            <div className="max-w-full max-h-full overflow-auto opacity-100 transition-opacity duration-1000 ">
+            <div className="max-w-full max-h-full overflow-auto opacity-100 transition-opacity ease-linear duration-1000 ">
               <img src={foto} alt="" className="rounded-t-2xl" />
             </div>
           </div>
         )}
 
-        <div className=" mb-[10%] transform hover:scale-105 transition duration-300 ease-in-out bg-[#363636] w-full rounded-xl  ">
-          <div className="h-[250.2px] w-full    ">
+        <div className=" mb-[10%] transform hover:scale-105 transition duration-300 ease-in-out bg-[#363636] w-full rounded-xl  shadow hover:shadow-2xl ">
+          <article className="h-[255px] w-full    ">
             <img
               src={foto}
               alt=""
               className="rounded-t-2xl h-full w-full"
               onClick={openModal}
             />
-          </div>
-          <div className="textOnCards">
-            <h3 className="text-center text-[28px]  font-semibold text-[#CCCCCC]">
+          </article>
+          <article className="textOnCards w-[90%] mx-auto">
+            <header className="text-center text-[28px]  font-semibold text-[#CCCCCC]">
               {titulo}
-            </h3>
-            <p className="text-[18px] w-[90%] mx-auto text-[#CCCCCC] my-3 ">
+            </header>
+            <p className="text-[18px] mx-5  text-[#CCCCCC] my-3 max-w-[300px] max-h-[185px] overflow-hidden">
               {desc}
             </p>
             <div className="w-full flex mx-auto text-[#CCCCCC] justify-center items-center gap-1 ">
@@ -49,7 +49,7 @@ export default function CardProject({ foto, titulo, desc, tec, url, url2 }) {
                 {tec}
               </p>
             </div>
-            <div className="flex  justify-around mt-4 gap-[10%] w-[90%] mx-auto text-[12px] text-[#FFFFFF] underline pb-[10%]">
+            <article className="flex  justify-around mt-4 gap-[10%] w-[90%] mx-auto text-[12px] text-[#FFFFFF] underline pb-[10%]">
               <a
                 href={url}
                 target="_blank"
@@ -109,8 +109,8 @@ export default function CardProject({ foto, titulo, desc, tec, url, url2 }) {
                 </svg>
                 View Code
               </a>
-            </div>
-          </div>
+            </article>
+          </article>
         </div>
       </div>
     </>

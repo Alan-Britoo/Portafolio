@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavBar, NavIcons } from "./navBar";
 import icono from "../assets/logo 1.svg";
 import "../Contenedores/info.css";
 
-export default function InfoNavbar() {
+export default function InfoNavbar({ toggleAbout }) {
+  /* const [ocultar, setOcultar] = useState(true);
+  const openAbout = () => {
+    setOcultar(false);
+  }; */
   return (
     <div className="flex justify-around  items-center  bg-[#191919] text-[#A7A7A7] w-full pt-[2%]  ">
       <img
@@ -19,13 +23,14 @@ export default function InfoNavbar() {
           <NavBar nom={"Home"} />
         </a>
         <a
-          href=""
+          onClick={toggleAbout}
+          href="#about"
           className="bg-gradient-to-r  hover:from-pink-600 hover:to-blue-500 hover:scale-110 transition duration-200 hover:pb-1 ease-in-out px-3 py-[1px] rounded-md"
         >
           <NavBar nom={"About"} />
         </a>
         <a
-          href=""
+          href="#projects"
           className="bg-gradient-to-r  hover:from-pink-600 hover:to-blue-500 hover:scale-110 transition duration-200 hover:pb-1 ease-in-out px-3 py-[1px] rounded-md"
         >
           <NavBar nom={"Projects"} />
