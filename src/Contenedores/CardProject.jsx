@@ -37,7 +37,7 @@ export default function CardProject({ foto, titulo, desc, tec, url, url2 }) {
             />
           </article>
           <article className="textOnCards w-[90%] mx-auto">
-            <header className="text-center text-[28px]  font-semibold text-[#CCCCCC]">
+            <header className="text-center text-[28px] mt-2 font-semibold text-[#CCCCCC]">
               {titulo}
             </header>
             <p className="text-[18px] mx-5  text-[#CCCCCC] my-3 max-w-[300px] max-h-[185px] overflow-hidden">

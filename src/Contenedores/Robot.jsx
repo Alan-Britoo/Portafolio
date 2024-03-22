@@ -4,6 +4,8 @@ import Yo from "../assets/ElVijoRotsen.jpeg";
 
 import Wp2 from "../assets/wp3.png";
 import Gm from "../assets/gmail.svg";
+import Git from "../assets/github.svg";
+import Link from "../assets/link.svg";
 
 function Robot() {
   const [expanded, setExpanded] = useState(false);
@@ -16,6 +18,22 @@ function Robot() {
     <div className="fixed bottom-14 right-9 z-10">
       {expanded && (
         <div className="mt-2 rounded-lg shadow-md p-1 flex flex-col gap-3 transition-all duration-1000">
+          <a
+            href="https://github.com/Alan-Britoo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
+            <img src={Git} alt="Correo" className="w-12 h-12" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rotsenestefanel/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
+            <img src={Link} alt="Correo" className="w-12 h-12" />
+          </a>
           <a
             href="https://wa.me/+573175200679"
             target="_blank"
