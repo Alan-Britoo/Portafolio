@@ -3,11 +3,12 @@ import InfoNavbar from "./Contenedores/infoNavbar";
 import { NavIcons } from "./Contenedores/navBar";
 import Infoicon from "./Contenedores/infoicon";
 import fotoR from "./assets/ElVijoRotsen.jpeg";
-import Footer from "./Contenedores/Foot";
 
 import About from "./Contenedores/About";
 import Robot from "./Contenedores/Robot";
 import CarouselSlider from "./Contenedores/CarouselSlider";
+
+/* import { useTypewriter, Cursor } from "react-simple-typewriter"; */
 
 function App() {
   const [showAbout, setShowAbout] = useState(false);
@@ -17,9 +18,12 @@ function App() {
   };
   return (
     <>
-      <div className=" bg-[#191919]">
+      <div className=" bg-[#191919] w-full">
         <InfoNavbar toggleAbout={toggleAbout} />
-        <div className="h-full w-[80%] flex justify-between items-center mt-[10%] text-white mx-auto md:bg-[#191919] lg:bg-[#191919] ">
+        <section
+          id="home"
+          className="h-full w-[80%] flex justify-between items-center mt-[10%] text-white mx-auto md:bg-[#191919] lg:bg-[#191919] "
+        >
           <h1
             className="text-5xl text-start max-md:text-[26px] max-lg:text-[38px]"
             data-aos="fade-up-right"
@@ -45,7 +49,7 @@ function App() {
               className="rounded-full h-full w-full object-cover border-4 border-transparent transform hover:scale-105 transition duration-300 ease-in-out  "
             />
           </div>
-        </div>
+        </section>
         {showAbout && (
           <section id="about" className=" max-sm:bg-[#191919]">
             <About />
@@ -60,7 +64,79 @@ function App() {
         </p>
 
         <div className="h-[20%] py-[5%]">
-          <Infoicon />
+          {/* <Infoicon /> */}
+          <div class="slider">
+            <div class="slide-track gap-5">
+              <div class="slide">
+                <img src="/src/assets/iconos/html.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/css.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/js.svg" alt="" />
+              </div>
+              <div class="slide flex justify-center items-center">
+                <img src="/src/assets/iconos/php.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/react.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/laravel.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/tailwind.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img
+                  src="/src/assets/iconos/git.svg"
+                  alt=""
+                  className="fill-current text-red-500"
+                />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/github.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/boot.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/html.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/css.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/js.svg" alt="" />
+              </div>
+              <div class="slide flex justify-center items-center">
+                <img src="/src/assets/iconos/php.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/react.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/laravel.png" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/tailwind.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img
+                  src="/src/assets/iconos/git.svg"
+                  alt=""
+                  className="fill-current text-red-500"
+                />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/github.svg" alt="" />
+              </div>
+              <div class="slide">
+                <img src="/src/assets/iconos/boot.svg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
         <div
           id="projects"
@@ -74,8 +150,8 @@ function App() {
 
         <CarouselSlider />
 
-        <section id="footer" className="mt-[5%] ">
-          <Footer />
+        <section id="footer" className="py-[2%] w-full max-sm:pb-[3%]">
+          <InfoNavbar toggleAbout={toggleAbout} />
         </section>
         <Robot />
       </div>

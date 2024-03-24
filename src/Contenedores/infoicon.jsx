@@ -11,7 +11,7 @@ import php from "../assets/php.png";
 export default function Infoicon() {
   return (
     <>
-      <div className="flex flex-wrap justify-center w-[70%] mx-auto h-[30%] transform  hover:scale-[1.03] transition duration-500 ease-in-out animate-pulse  max-sm:w-[90%] ">
+      <div className="flex flex-wrap justify-center w-[70%] mx-auto h-[30%] transform  hover:scale-[1.03] transition duration-500 ease-in-out animate-pulse   ">
         <div
           className="flex flex-column justify-center gap-[6%] w-[100%] mx-auto hover:bg-[#1d1c1c] rounded-3xl  "
           data-aos="zoom-in"
@@ -54,11 +54,11 @@ export default function Infoicon() {
           </div>
         </div>
         <div
-          className="flex flex-column justify-center w-[100%] gap-[6%] mt-[3%] h-full hover:bg-[#1d1c1c] rounded-3xl "
+          className="flex flex-column justify-center w-full gap-[6%] mt-[3%] h-full hover:bg-[#1d1c1c] rounded-3xl "
           data-aos="zoom-in"
           data-aos-duration="3000"
         >
-          <div className="h-[100px] w-[100px] flex justify-center items-center  ">
+          <div className="h-[110px] w-[100px] flex justify-center items-center bg-green-500 max-sm:py-auto ">
             <NavIcons url={lara} alt={"LARAVEL"} url2={""} />
           </div>
           <div className="h-[110px] w-[100px] flex justify-center items-center transform hover:scale-110 transition duration-300 ease-in-out ">
@@ -79,7 +79,7 @@ export default function Infoicon() {
               url2={""}
             />
           </div>
-          <div className="h-[110px] w-[100px] flex justify-center items-center">
+          <div className="h-[110px] w-[100px] flex justify-center items-center hover:scale-[1.2] duration-500">
             <NavIcons url={tai} alt={"TAILWIND"} url2={""} />
           </div>
           <div className="h-[120px] w-[120px]  flex justify-center items-center ">
