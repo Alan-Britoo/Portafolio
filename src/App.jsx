@@ -8,7 +8,16 @@ import About from "./Contenedores/About";
 import Robot from "./Contenedores/Robot";
 import CarouselSlider from "./Contenedores/CarouselSlider";
 
-/* import { useTypewriter, Cursor } from "react-simple-typewriter"; */
+import ht from "/src/assets/iconos/html.svg";
+import css from "/src/assets/iconos/css.svg";
+import js from "/src/assets/iconos/js.svg";
+import php from "/src/assets/iconos/php.svg";
+import react from "/src/assets/iconos/react.svg";
+import la from "/src/assets/iconos/laravel.png";
+import tw from "/src/assets/iconos/tailwind.svg";
+import git from "/src/assets/iconos/git.svg";
+import gh from "/src/assets/iconos/github.svg";
+import boot from "/src/assets/iconos/boot.svg";
 
 function App() {
   const [showAbout, setShowAbout] = useState(false);
@@ -68,72 +77,64 @@ function App() {
           <div class="slider">
             <div class="slide-track gap-5">
               <div class="slide">
-                <img src="/src/assets/iconos/html.svg" alt="" />
+                <img src={ht} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/css.svg" alt="" />
+                <img src={css} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/js.svg" alt="" />
+                <img src={js} alt="" />
               </div>
               <div class="slide flex justify-center items-center">
-                <img src="/src/assets/iconos/php.svg" alt="" />
+                <img src={php} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/react.svg" alt="" />
+                <img src={react} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/laravel.png" alt="" />
+                <img src={la} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/tailwind.svg" alt="" />
+                <img src={tw} alt="" />
               </div>
               <div class="slide">
-                <img
-                  src="/src/assets/iconos/git.svg"
-                  alt=""
-                  className="fill-current text-red-500"
-                />
+                <img src={git} alt="" className="fill-current text-red-500" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/github.svg" alt="" />
+                <img src={gh} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/boot.svg" alt="" />
+                <img src={boot} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/html.svg" alt="" />
+                <img src={ht} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/css.svg" alt="" />
+                <img src={css} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/js.svg" alt="" />
+                <img src={js} alt="" />
               </div>
               <div class="slide flex justify-center items-center">
-                <img src="/src/assets/iconos/php.svg" alt="" />
+                <img src={php} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/react.svg" alt="" />
+                <img src={react} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/laravel.png" alt="" />
+                <img src={la} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/tailwind.svg" alt="" />
+                <img src={tw} alt="" />
               </div>
               <div class="slide">
-                <img
-                  src="/src/assets/iconos/git.svg"
-                  alt=""
-                  className="fill-current text-red-500"
-                />
+                <img src={git} alt="" className="fill-current text-red-500" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/github.svg" alt="" />
+                <img src={gh} alt="" />
               </div>
               <div class="slide">
-                <img src="/src/assets/iconos/boot.svg" alt="" />
+                <img src={boot} alt="" />
               </div>
             </div>
           </div>
