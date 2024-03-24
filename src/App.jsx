@@ -8,8 +8,8 @@ import About from "./Contenedores/About";
 import Robot from "./Contenedores/Robot";
 import CarouselSlider from "./Contenedores/CarouselSlider";
 
-import ht from "/src/assets/iconos/html.svg";
-import css from "/src/assets/iconos/css.svg";
+/* import ht from "/src/assets/iconos/html.svg";
+import css from "/src/assets/iconos/css.webp";
 import js from "/src/assets/iconos/js.svg";
 import php from "/src/assets/iconos/php.svg";
 import react from "/src/assets/iconos/react.svg";
@@ -17,7 +17,7 @@ import la from "/src/assets/iconos/laravel.png";
 import tw from "/src/assets/iconos/tailwind.svg";
 import git from "/src/assets/iconos/git.svg";
 import gh from "/src/assets/iconos/github.svg";
-import boot from "/src/assets/iconos/boot.svg";
+import boot from "/src/assets/iconos/boot.svg"; */
 
 function App() {
   const [showAbout, setShowAbout] = useState(false);
@@ -25,6 +25,7 @@ function App() {
   const toggleAbout = () => {
     setShowAbout(!showAbout);
   };
+
   return (
     <>
       <div className=" bg-[#191919] w-full">
@@ -72,72 +73,8 @@ function App() {
           Technologies I’ve been working with recently
         </p>
 
-        <div className="h-[20%] py-[5%]">
-          {/* <Infoicon /> */}
-          <div class="slider">
-            <div class="slide-track gap-5">
-              <div class="slide">
-                <img src={ht} alt="" />
-              </div>
-              <div class="slide">
-                <img src={css} alt="" />
-              </div>
-              <div class="slide">
-                <img src={js} alt="" />
-              </div>
-              <div class="slide flex justify-center items-center">
-                <img src={php} alt="" />
-              </div>
-              <div class="slide">
-                <img src={react} alt="" />
-              </div>
-              <div class="slide">
-                <img src={la} alt="" />
-              </div>
-              <div class="slide">
-                <img src={tw} alt="" />
-              </div>
-              <div class="slide">
-                <img src={git} alt="" className="fill-current text-red-500" />
-              </div>
-              <div class="slide">
-                <img src={gh} alt="" />
-              </div>
-              <div class="slide">
-                <img src={boot} alt="" />
-              </div>
-              <div class="slide">
-                <img src={ht} alt="" />
-              </div>
-              <div class="slide">
-                <img src={css} alt="" />
-              </div>
-              <div class="slide">
-                <img src={js} alt="" />
-              </div>
-              <div class="slide flex justify-center items-center">
-                <img src={php} alt="" />
-              </div>
-              <div class="slide">
-                <img src={react} alt="" />
-              </div>
-              <div class="slide">
-                <img src={la} alt="" />
-              </div>
-              <div class="slide">
-                <img src={tw} alt="" />
-              </div>
-              <div class="slide">
-                <img src={git} alt="" className="fill-current text-red-500" />
-              </div>
-              <div class="slide">
-                <img src={gh} alt="" />
-              </div>
-              <div class="slide">
-                <img src={boot} alt="" />
-              </div>
-            </div>
-          </div>
+        <div className=" py-[5%]   max-sm:h-[110px]">
+          <Infoicon />
         </div>
         <div
           id="projects"

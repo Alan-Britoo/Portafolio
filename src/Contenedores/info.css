@@ -16,9 +16,9 @@
     width: 110px;
 }
 
-.slider .slide img {
+/* .slider .slide img {
     width: 100%;
-}
+} */
 
 @keyframes scroll {
     0% {

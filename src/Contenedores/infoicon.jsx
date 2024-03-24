@@ -3,15 +3,26 @@ import { NavBar, NavIcons } from "./navBar";
 import icoo from "../assets/logos_react.svg";
 import "../Contenedores/info.css";
 import tai from "../assets/tailwind.svg";
-import git from "../assets/git-icon.svg";
+import gi from "../assets/git-icon.svg";
 
 import lara from "../assets/Laravel.png";
-import php from "../assets/php.png";
+import ph from "../assets/php.png";
+
+import ht from "../assets/iconos/html.svg";
+import css from "../assets/iconos/css.webp";
+import js from "../assets/iconos/js.svg";
+import php from "../assets/iconos/php.svg";
+import react from "../assets/iconos/react.svg";
+import la from "../assets/iconos/laravel.png";
+import tw from "../assets/iconos/tailwind.svg";
+import git from "../assets/iconos/git.svg";
+import gh from "../assets/iconos/github.svg";
+import boot from "../assets/iconos/boot.svg";
 
 export default function Infoicon() {
   return (
     <>
-      <div className="flex flex-wrap justify-center w-[70%] mx-auto h-[30%] transform  hover:scale-[1.03] transition duration-500 ease-in-out animate-pulse   ">
+      {/* <div className="flex flex-wrap justify-center w-[70%] mx-auto h-[30%] transform  hover:scale-[1.03] transition duration-500 ease-in-out animate-pulse   ">
         <div
           className="flex flex-column justify-center gap-[6%] w-[100%] mx-auto hover:bg-[#1d1c1c] rounded-3xl  "
           data-aos="zoom-in"
@@ -84,6 +95,94 @@ export default function Infoicon() {
           </div>
           <div className="h-[120px] w-[120px]  flex justify-center items-center ">
             <NavIcons url={git} alt={"GIT"} url2={""} />
+          </div>
+        </div>
+      </div> */}
+      <div class="slider  ">
+        <div class="slide-track gap-[1.5%] flex items-center justify-center ">
+          <div class="slide">
+            <img src={ht} alt="" className="max-sm:h-[60px] h-[92px]" />
+          </div>
+          <div class="slide">
+            <img src={react} alt="" className="max-sm:h-[60px]" />
+          </div>
+          <div class="slide ">
+            <img className=" h-[80px] max-sm:h-[60px]" src={css} alt="" />
+          </div>
+          <div class="slide">
+            <img src={la} alt="" className="max-sm:h-[60px]" />
+          </div>
+
+          <div class="slide flex justify-center items-center">
+            <img src={php} alt="" />
+          </div>
+          <div class="slide">
+            <img src={js} alt="" className="max-sm:h-[60px]" />
+          </div>
+          <div class="slide">
+            <img
+              src={tw}
+              alt=""
+              className="flex justify-center items-center w-full"
+            />
+          </div>
+          <div class="slide">
+            <img src={git} alt="" className="max-sm:h-[60px]" />
+          </div>
+
+          <div class="slide">
+            <img src={boot} alt="" className="max-sm:h-[60px]" />
+          </div>
+          <div class="slide  ">
+            <img
+              src={gh}
+              alt=""
+              className="fill-current bg-green-600 rounded-full max-sm:h-[60px] max-sm:w-[60px]"
+            />
+          </div>
+          <div class="slide">
+            <img src={ht} alt="" className="max-sm:h-[60px] h-[92px]" />
+          </div>
+          <div class="slide">
+            <img src={react} alt="" className="max-sm:h-[60px]" />
+          </div>
+          <div class="slide">
+            <img className=" h-[80px] max-sm:h-[60px]" src={css} alt="" />
+          </div>
+          <div class="slide">
+            <img src={la} alt="" className="max-sm:h-[60px]" />
+          </div>
+
+          <div class="slide flex justify-center items-center">
+            <img src={php} alt="" />
+          </div>
+          <div class="slide">
+            <img src={js} alt="" className="max-sm:h-[60px]" />
+          </div>
+          <div class="slide">
+            <img
+              src={tw}
+              alt=""
+              className="flex justify-center items-center w-full"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src={git}
+              alt=""
+              className="fill-current text-red-500 max-sm:h-[60px]"
+            />
+          </div>
+
+          <div class="slide">
+            <img src={boot} alt="" className="max-sm:h-[60px]" />
+          </div>
+          <div class="slide">
+            <img
+              src={gh}
+              alt=""
+              className="fill-current bg-green-600 rounded-full max-sm:h-[60px] max-sm:w-[60px]"
+            />
           </div>
         </div>
       </div>

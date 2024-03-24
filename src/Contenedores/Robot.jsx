@@ -57,7 +57,7 @@ function Robot() {
         <img
           src={Yo}
           alt="Robot"
-          className={`w-[50px] h-[50px] rounded-full ${
+          className={`w-[50px] h-[50px] rounded-full transition ${
             expanded ? "rotate-180" : ""
           }`}
         />
